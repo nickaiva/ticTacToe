@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+
+}
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: navajowhite;
+}
+
+button,
+i,
+.game-cell {
+  cursor: pointer;
+}
+
+.intro,
+.start-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.start-screen-container h3 {
+  margin-top: -10px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* Game Content */
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Made the width smaller and added margin. By changing the width it makes the columns try to fit into this space  */
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 5%;
+}
+
+.game-cell {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  height: 100px;
+}
+
+/* Popup */
+/* --------------------------------------- */
+.popup-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+  position: fixed;
+  padding: 15px 32px;
+  background-color: #131a3d;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  /*margin-left: -85px;*/
+  margin-left: -90px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 5px;
+  z-index: 2;
+  width: 220px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Buttons: Start Button, Reset Button, Play Again Button, Back Button */
+/* --------------------------------------- */
+.play-again-btn {
+  font-weight: bold;
+  border: none;
+  padding: 10px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Times New Roman', sans-serif;
+  border-radius: 5px;
+  background-color: #f8ecff;
+}
+
+.play-again-btn:hover {
+  background-color: #948b99;
+}
+
+.button-container {
+  margin-left: 7px;
+  margin-top: 20px;
+}
+
+.button-container .start-btn,
+.back-btn,
+.reset-btn {
+  width: 140px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.reset-btn {
+  margin-left: 10px;
+}
+
+.start-btn:hover,
+.back-btn:hover,
+.reset-btn:hover {
+  background-color: yellowgreen;
+}
+
+.button-container .start-btn:focus {
+  outline: 1px solid green;
+}
+
+.util-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Insert Player Name */
+/* --------------------------------------- */
+label {
+  padding: 5px;
+}
+
+.player-info {
+  display: flex;
+  width: 575px;
+  justify-content: space-between;
+}
+
+.players-form input {
+  background: #0D122B;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-family: 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+.players-form input,
+button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  font-family: 'Times New Roman', serif;
+}
+
+.player1,
+.player2 {
+  background-color: #0D122B;
+  color: white;
+  border-radius: 5px;
+  width: 140px;
+  text-align: center;
+}
+
+/* GitHub Button */
+/* --------------------------------------- */
+#github-btn {
+  width: 140px;
+  background-color: #573fc4;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Times New Roman', sans-serif;
+  border-radius: 5px;
+}
+
+#github-btn:hover {
+  background-color: #5238c5;
+}
+
+#github-btn a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiTacToe</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>TiTacToe</h1>
+    </header>
+    <main>
+        <div class="start-screen-container">
+         
+            <h2>Enter the names for your players</h2>
+            <h3>Player 1 starts the first game. Player 2 the next and so on</h3>
+            <form class="players-form" name="PlayersForm">
+                <label for="player1">First</label>
+                <input type="text" placeholder="Player 1 - X" id="player1" name="player1">
+
+                <label for="player2">Second</label>
+                <input type="text" placeholder="Player 2 - O" id="player2" name="player2">
+            </form>
+
+            <div class="button-container">
+                <button class="start-btn" id="start">Start</button>
+            </div>
+        </div>
+
+        <div class="game-screen-container hidden">
+            <div class="intro">
+                
+                <div class="player-info">
+                    <div class="player1">
+                    </div>
+                    <div class="player2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-container">
+            </div>
+
+            <div class="popup-container hidden">
+                <div class="popup">
+                </div>
+            </div>
+
+            <div class="util-container">
+                <button class="back-btn">Back to menu</button>
+                <button class="reset-btn">Reset game</button>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+    <!--script src="./js/script.js"></script>-->
+    <script  src="./js/ticTacToe.js"></script>
+</body>
+
+</html>
